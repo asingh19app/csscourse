@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+body {
+    padding:5% 10%;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+ol {
+    list-style-type: upper-roman; 
+    /* if we have a list-style-type of none it will get rid of numbers and letters but will still have identation but with padding 0 it will have no identation then. */
+}
+
+ul {
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    /* when we center the list items we use list-style-position to put the bullet points next to the list items. */
+    color: blue;
+    /* changes color properties */
+    line-height: 1.6;
+
+    /*
+    list-style-image: url("./images/html_logo_300x300.png");
+     can put image as bullet point, if we do url("square, ./images/html_logo_300*300.png");
+     then have inside; to center bp with list items
+    then we have the square as a fallback if the photo does not work */
+
+}
+
+ul li:nth-child(2){
+    color: red;
+    /* nth-child() selects a specific element and applies css to that */
+}
+
+ul ::marker {
+    color:black;
+    font-family: fantasy;
+    font-size: 1em;
+    content: "Only $5 >>";
+}
