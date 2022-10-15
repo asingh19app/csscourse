@@ -1,0 +1,43 @@
+
+body {
+    font:1.5rem;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.columns {
+    /* column-count: 4;
+    column-width: 250px; 
+    means same thing as down below*/
+    columns: 4 250px;
+    column-rule: 3px solid black;
+    column-gap: 3rem;
+}
+
+
+.columns p {
+    margin-top:0;
+    
+}
+
+.columns h2 {
+    margin-top:0;
+    background-color: black;
+    color: antiquewhite;
+    padding: 1rem;
+    break-inside: avoid;
+   
+}
+
+
+.columns .quote {
+    margin-top:2rem;
+    font-size:3rem;
+    text-align:center;
+    color:black;
+    column-span:all;
+}
+
+
+.nowrap {
+    white-space:nowrap;
+}
